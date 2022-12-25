@@ -1,0 +1,40 @@
+01 Installation -----------------------------------------------------------------------------------------------------------------------
+
+	- sudo npm install -g @vue/cli - globally
+	- vue create . - in project folder "." or name
+		manually, turn off linter, vue 2, dedicated, no for future
+
+	Vuetify - material design, like bootstrap for vue:
+	- vue add vuetify - default option
+
+	- npm run serve - test run
+	- click on link: http://192.168.0.105:8080/ in terminal
+
+	- clean project folder: remove 'assets' folder, remove 'hello world' file
+
+	- I added in jsconfig.json:   "vueCompilerOptions": {
+																		"target": 2.7
+																	}
+		Because I had an error.
+
+02 App Bar -------------------------------------------------------------------------------------------------------------------------------------
+
+	- Go to https://vuetifyjs.com/en/components/app-bars/#dense
+	- Open code of bars in codepen (press codepen button above component) and copy code in left tab
+	- Insert code in template block and edit it.
+
+	- markup nav panel and move it to separate component Navbar.vue
+	- move panels code there
+	- in main file import new component and add it in components field
+
+03 Pages - npm i vue-router ----------------------------------------------------------------------------------------------------------------------------------------
+
+	- 6:30
+	- npm config set legacy-peer-deps true - because some old versions...
+	- npm i vue-router@3.4.9
+	- Create folder "pages"
+	- Create two files there: MainPage.vue, PhotosPage.vue
+
+	- Create file router.js in src, edit it
+	- Import router in main.js
+	- Add router in main file App.vue like <router-view/>

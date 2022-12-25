@@ -6,8 +6,15 @@
 			<!-- Move buttons right: fill free space -->
 			<v-spacer />
 
-			<v-btn outlined class="ml-3">Main</v-btn>
-			<v-btn outlined class="ml-3">Photo</v-btn>
+			<v-btn outlined class="ml-3">
+				<router-link to="/">
+					Main
+				</router-link>
+			</v-btn>
+			<v-btn outlined class="ml-3">
+				<router-link to="/photos">
+					Photo
+				</router-link></v-btn>
 		</v-app-bar>
 	</v-container>
 </template>
