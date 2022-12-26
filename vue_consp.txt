@@ -38,3 +38,8 @@
 	- Create file router.js in src, edit it
 	- Import router in main.js
 	- Add router in main file App.vue like <router-view/>
+
+04 Gallery - 10:15 ----------------------------------------------------------------------------------------------------------------------------------
+
+	- Create photo folder with component for one photo
+	- Define data field in PhotosPage and import there Photo component
