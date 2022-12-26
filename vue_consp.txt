@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=eEF6Szpda9g&t=317s
+
 01 Installation -----------------------------------------------------------------------------------------------------------------------
 
 	- sudo npm install -g @vue/cli - globally
@@ -43,3 +45,35 @@
 
 	- Create photo folder with component for one photo
 	- Define data field in PhotosPage and import there Photo component
+	- Build array of photos with directive <v-for>
+	- Send props in component, v-bind:photo - "photo" is the name of the props, or just :photo without v-bind
+
+05 Async request for photo data, AXIOS ----------------------------------------------------------------------------------------------------------------------
+
+	- npm install axios
+	- add mounted() method of component life cycle in PhotosPage.vue
+
+	- in main.js:
+	- remove line: Vue.config.productionTip = false
+	- import axios from 'axios';
+	- Record axios in prototype for use it in every component: Vue.prototype.axios = axios;
+	- Then we can use this.axios in component PhotosPage.vue in mounted() method
+
+	- PhotosPage.vue:
+	- this.axios - get data from https://jsonplaceholder.typicode.com/photos?_limit=10, get 10 photos
+	- move this.axios in separate field methods
+
+06 Design of the Photo.vue component --------------------------------------------------------------------------------------------------------------------
+
+	- 15:18
+
+	- In PhotosPage.vue:
+	- add <v-row>
+
+	- In Photo.vue:
+	- Add <v-col cols="4"> - 4 of 12 columns
+	- Add <v-card>, <v-title>...
+
+07 PhotoForm.vue ----------------------------------------------------------------------------------------------------------------------------------------
+
+	- 16:40
