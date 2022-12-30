@@ -5,6 +5,7 @@
 		</v-row>
 	</v-container>
 </template>
+
 <script>
 import Photo from '@/components/photo/Photo.vue';
 
@@ -33,6 +34,7 @@ export default {
 	}
 }
 </script>
+
 <style>
 
 </style>
