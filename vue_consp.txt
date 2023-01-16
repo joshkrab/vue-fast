@@ -3,7 +3,7 @@ https://www.youtube.com/watch?v=eEF6Szpda9g&t=317s
 01 Installation -----------------------------------------------------------------------------------------------------------------------
 
 	- sudo npm install -g @vue/cli - globally
-	- vue create . - in project folder "." or name
+	- vue create . - in project folder - "." or name
 		manually, turn off linter, vue 2, dedicated, no for future
 
 	Vuetify - material design, like bootstrap for vue:
@@ -48,7 +48,7 @@ https://www.youtube.com/watch?v=eEF6Szpda9g&t=317s
 	- Build array of photos with directive <v-for>
 	- Send props in component, v-bind:photo - "photo" is the name of the props, or just :photo without v-bind
 
-05 Async request for photo data, AXIOS ----------------------------------------------------------------------------------------------------------------------
+05 Async request for photo data, AXIOS - 13:34 ----------------------------------------------------------------------------------------------------------------------
 
 	- npm install axios
 	- add mounted() method of component life cycle in PhotosPage.vue
@@ -63,9 +63,7 @@ https://www.youtube.com/watch?v=eEF6Szpda9g&t=317s
 	- this.axios - get data from https://jsonplaceholder.typicode.com/photos?_limit=10, get 10 photos
 	- move this.axios in separate field methods
 
-06 Design of the Photo.vue component --------------------------------------------------------------------------------------------------------------------
-
-	- 15:18
+06 Design of the Photo.vue component - 15:18 --------------------------------------------------------------------------------------------------------------------
 
 	- In PhotosPage.vue:
 	- add <v-row>

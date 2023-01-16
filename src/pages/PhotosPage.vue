@@ -13,6 +13,7 @@ export default {
 	components: { Photo },
 
 	data: () => ({
+
 		// photos: [
 		// 	{ id: 1, title: 'photo 1' },
 		// 	{ id: 2, title: 'photo 2' },
@@ -20,7 +21,8 @@ export default {
 		// 	{ id: 4, title: 'photo 4' },
 		// 	{ id: 5, title: 'photo 5' },
 		// ]
-		photos: []
+
+		photos: [] // response.data
 	}),
 
 	mounted () {

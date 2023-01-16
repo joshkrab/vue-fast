@@ -1,5 +1,7 @@
 <!-- vueinit -->
 <template>
+	<!-- container - for not full hight of app-bar -->
+	<!-- fluid - for full width of app-bar -->
 	<v-container fluid>
 		<v-app-bar color="orange" dark>
 

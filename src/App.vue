@@ -6,6 +6,7 @@
 </template>
 
 <script>
+// @ == src
 import Navbar from "@/components/Navbar"
 
 export default {

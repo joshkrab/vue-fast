@@ -7,16 +7,18 @@ Vue.use(VueRouter);
 const routes = [
 	{
 		path: '/',
+		// First way to connect component:
 		component: MainPage,
 	},
 	{
 		path: '/photos',
-		// Lazy loading component:
+		// Second way - Lazy loading component:
 		component: () => import('./pages/PhotosPage')
 	}
 ]
 
 export default new VueRouter({
+
 	mode: 'history',
 	routes
 })
