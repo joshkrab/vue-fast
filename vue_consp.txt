@@ -72,6 +72,37 @@ https://www.youtube.com/watch?v=eEF6Szpda9g&t=317s
 	- Add <v-col cols="4"> - 4 of 12 columns
 	- Add <v-card>, <v-title>...
 
-07 PhotoForm.vue ----------------------------------------------------------------------------------------------------------------------------------------
+07 PhotoForm.vue - 16:40 ----------------------------------------------------------------------------------------------------------------------------------------
 
-	- 16:40
+	- Create component in "photo" folder
+	- Import it in PhotosPage
+	- Add component in template
+
+	- Instead of the value and onChange (like in react), in vue:
+	- In data field add to variables
+	- add v-model directive in inputs with appropriate variables
+	- Now, when we change value in input will change values in these variables
+
+	- Add @click function on button
+	- Create FileReader(), new photo object, end emit this object in event to parent component
+	this.$emit('addPhoto', photo)
+
+	- In PhotosPage add addPhoto function for push new photo object
+	- Send this function in PhotoForm component (like @click) with event name @addPhoto="addPhoto"
+
+08 Photo Popup - 22:15 -----------------------------------------------------------------------------------------------------------------------------------------------------
+
+	- Create file PhotoDialog.vue
+	- Go to vuetify for dialog  <v-dialog>
+	- Add there card and props
+	- Import this component in PhotosPage
+
+	- Add @click event on every photo in Photo.vue
+	- Emit event there "openPhoto"
+	- Create listener in PhotosPage
+	- Add :photo and :dialog-visible props to PhotoDialog
+
+	- In PhotoDialog add watch field for watching the value
+	- Change some props, because we had an error about mutable props
+
+	- 30 minute
