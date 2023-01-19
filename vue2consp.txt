@@ -1,6 +1,6 @@
 https://www.youtube.com/watch?v=eEF6Szpda9g&t=317s
 
-01 Installation -----------------------------------------------------------------------------------------------------------------------
+01 Installation -----------------------------------------------------------------------
 
 	- sudo npm install -g @vue/cli - globally
 	- vue create . - in project folder - "." or name
@@ -19,7 +19,7 @@ https://www.youtube.com/watch?v=eEF6Szpda9g&t=317s
 																	}
 		Because I had an error.
 
-02 App Bar -------------------------------------------------------------------------------------------------------------------------------------
+02 App Bar ----------------------------------------------------------------------------
 
 	- Go to https://vuetifyjs.com/en/components/app-bars/#dense
 	- Open code of bars in codepen (press codepen button above component) and copy code in left tab
@@ -29,7 +29,7 @@ https://www.youtube.com/watch?v=eEF6Szpda9g&t=317s
 	- move panels code there
 	- in main file import new component and add it in components field
 
-03 Pages - npm i vue-router ----------------------------------------------------------------------------------------------------------------------------------------
+03 Pages - npm i vue-router -----------------------------------------------------------
 
 	- 6:30
 	- npm config set legacy-peer-deps true - because some old versions...
@@ -41,14 +41,14 @@ https://www.youtube.com/watch?v=eEF6Szpda9g&t=317s
 	- Import router in main.js
 	- Add router in main file App.vue like <router-view/>
 
-04 Gallery - 10:15 ----------------------------------------------------------------------------------------------------------------------------------
+04 Gallery - 10:15 --------------------------------------------------------------------
 
 	- Create photo folder with component for one photo
 	- Define data field in PhotosPage and import there Photo component
 	- Build array of photos with directive <v-for>
 	- Send props in component, v-bind:photo - "photo" is the name of the props, or just :photo without v-bind
 
-05 Async request for photo data, AXIOS - 13:34 ----------------------------------------------------------------------------------------------------------------------
+05 Async request for photo data, AXIOS - 13:34 ----------------------------------------
 
 	- npm install axios
 	- add mounted() method of component life cycle in PhotosPage.vue
@@ -63,7 +63,7 @@ https://www.youtube.com/watch?v=eEF6Szpda9g&t=317s
 	- this.axios - get data from https://jsonplaceholder.typicode.com/photos?_limit=10, get 10 photos
 	- move this.axios in separate field methods
 
-06 Design of the Photo.vue component - 15:18 --------------------------------------------------------------------------------------------------------------------
+06 Design of the Photo.vue component - 15:18 ------------------------------------------
 
 	- In PhotosPage.vue:
 	- add <v-row>
@@ -72,7 +72,7 @@ https://www.youtube.com/watch?v=eEF6Szpda9g&t=317s
 	- Add <v-col cols="4"> - 4 of 12 columns
 	- Add <v-card>, <v-title>...
 
-07 PhotoForm.vue - 16:40 ----------------------------------------------------------------------------------------------------------------------------------------
+07 PhotoForm.vue - 16:40 --------------------------------------------------------------
 
 	- Create component in "photo" folder
 	- Import it in PhotosPage
@@ -90,7 +90,7 @@ https://www.youtube.com/watch?v=eEF6Szpda9g&t=317s
 	- In PhotosPage add addPhoto function for push new photo object
 	- Send this function in PhotoForm component (like @click) with event name @addPhoto="addPhoto"
 
-08 Photo Popup - 22:15 -----------------------------------------------------------------------------------------------------------------------------------------------------
+08 Photo Popup - 22:15 ----------------------------------------------------------------
 
 	- Create file PhotoDialog.vue
 	- Go to vuetify for dialog  <v-dialog>
