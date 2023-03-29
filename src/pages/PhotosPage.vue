@@ -37,7 +37,8 @@ export default {
 
 	methods: {
 		fetchToDo () {
-			this.axios.get('https://jsonplaceholder.typicode.com/photos?_limit=10').then(response => this.photos = response.data)
+			this.axios.get('https://jsonplaceholder.typicode.com/photos?_limit=10')
+				.then(response => this.photos = response.data)
 		},
 		addPhoto (photo) {
 			this.photos.push(photo)

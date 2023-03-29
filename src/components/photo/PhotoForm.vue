@@ -23,7 +23,7 @@ export default {
   methods: {
     addPhoto () {
       const reader = new FileReader();
-
+      // Onload - will work when the file is read
       reader.onload = () => {
         let photo = {
           id: Date.now(),
