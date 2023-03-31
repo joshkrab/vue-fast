@@ -116,7 +116,15 @@ https://www.youtube.com/watch?v=eEF6Szpda9g&t=317s
 11 v-if/v-else - 31:20 ------------------------------------------------------------------
 12 v-show - 32:00 -----------------------------------------------------------------------
 
-	- Stayі in the DOM
+	- Stays in the DOM
 
 13 VUEX - 32:30 --------------------------------------------------------------------------
+
+	- Create store folder and index.js there
+	- Create photoModule.js
+	- Every module has: state: {}, mutations: {}, getters: {}, actions: {},
+
+	- in main.js add store
+	- in PhotosPage component add dispatch in mounted()
+	- set getter in v-for
 
