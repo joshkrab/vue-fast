@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  // Another wat for props with array:
+  // Another way for props with array:
   // props: ['photo', 'dialogVisible'], // but it isn't ok
   props: {
     photo: {
@@ -35,10 +35,10 @@ export default {
   watch: {
     value (newValue) {
       console.log(newValue);
-      this.dialogVisible = newValue
+      this.dialogVisible = newValue;
     },
     dialogVisible (newValue) {
-      this.$emit('input', newValue)
+      this.$emit('input', newValue);
     }
 
   }

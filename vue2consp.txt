@@ -103,5 +103,20 @@ https://www.youtube.com/watch?v=eEF6Szpda9g&t=317s
 
 	- In PhotoDialog add watch field for watching the value
 	- Change some props, because we had an error about mutable props
+	- 'v-model' in props -> 'value' in component props
 
-	- 30 minute
+09 Watch - 28:00 -----------------------------------------------------------------------
+
+	- Use variables like methods...
+
+10 Computes - 30:15 --------------------------------------------------------------------
+
+	- Run when changes some variables inside computed function
+
+11 v-if/v-else - 31:20 ------------------------------------------------------------------
+12 v-show - 32:00 -----------------------------------------------------------------------
+
+	- Stayі in the DOM
+
+13 VUEX - 32:30 --------------------------------------------------------------------------
+
