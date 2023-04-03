@@ -114,6 +114,9 @@ https://www.youtube.com/watch?v=eEF6Szpda9g&t=317s
 	- Run when changes some variables inside computed function
 
 11 v-if/v-else - 31:20 ------------------------------------------------------------------
+
+	- 
+
 12 v-show - 32:00 -----------------------------------------------------------------------
 
 	- Stays in the DOM
