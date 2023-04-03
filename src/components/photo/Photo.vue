@@ -3,7 +3,7 @@
 		<v-card @click="openPhoto">
 
 			<v-card-title>
-				{{photo.title}}
+				{{ photo.title }}
 			</v-card-title>
 
 			<v-card-text>
@@ -14,7 +14,9 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex';
 export default {
+
 	props: {
 		photo: {
 			type: Object,
@@ -22,12 +24,17 @@ export default {
 		}
 	},
 	methods: {
+		...mapMutations(['setCurrentPhoto', 'showDialog', 'hideDialog']),
 		openPhoto () {
-			this.$emit('openPhoto', this.photo)
+			// this.$emit('openPhoto', this.photo)
+			// Run mutation:
+			// this.$store.commit('setCurrentPhoto', this.photo);
+			// this.$store.commit('showDialog');
+
+			this.setCurrentPhoto(this.photo);
+			this.showDialog();
 		}
 	}
 }
 </script>
-<style>
-
-</style>
+<style></style>

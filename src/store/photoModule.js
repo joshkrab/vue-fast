@@ -3,16 +3,31 @@ import axios from 'axios';
 export default {
   state: {
     photos: [],
+    dialogVisible: false,
+    currentPhoto: {},
   },
   mutations: {
     setPhotos(state, payload) {
       state.photos = payload;
+    },
+    setCurrentPhoto(state, payload) {
+      state.currentPhoto = payload;
+    },
+    showDialog(state) {
+      state.dialogVisible = true;
+    },
+    hideDialog(state) {
+      state.dialogVisible = false;
     },
   },
   getters: {
     getAllPhotos(state) {
       return state.photos;
     },
+    getDialogVisible(state) {
+      return state.dialogVisible;
+    },
+    getCurrentPhoto: (state) => state.currentPhoto,
   },
   actions: {
     fetchPhotos(context) {

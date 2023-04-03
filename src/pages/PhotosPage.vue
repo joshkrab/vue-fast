@@ -3,9 +3,9 @@
 		<PhotoForm @addPhoto="addPhoto" />
 		<!-- <div v-else>You can't add more photos</div> -->
 		<v-row>
-			<Photo v-for="photo in $store.getters.getAllPhotos" v-bind:photo="photo" @openPhoto="openPhoto" />
+			<Photo v-for="photo in $store.getters.getAllPhotos" v-bind:photo="photo" />
 		</v-row>
-		<PhotoDialog :photo="currentPhoto" v-model="dialogVisible" />
+		<PhotoDialog />
 	</v-container>
 </template>
 
@@ -13,6 +13,7 @@
 import Photo from '@/components/photo/Photo.vue';
 import PhotoDialog from '@/components/photo/PhotoDialog.vue';
 import PhotoForm from '@/components/photo/PhotoForm.vue';
+import { mapActions } from 'vuex';
 
 export default {
 	components: { Photo, PhotoForm, PhotoDialog },
@@ -28,16 +29,18 @@ export default {
 		// ]
 
 		photos: [], // response.data
-		currentPhoto: {},
-		dialogVisible: false
+		// currentPhoto: {},
+		// dialogVisible: false
 	}),
 
 	mounted () {
 		// this.fetchToDo()
-		this.$store.dispatch('fetchPhotos')
+		// this.$store.dispatch('fetchPhotos')
+		this.fetchPhotos()
 	},
 
 	methods: {
+		...mapActions(['fetchPhotos']),
 		// fetchToDo () {
 		// 	this.axios.get('https://jsonplaceholder.typicode.com/photos?_limit=10')
 		// 		.then(response => this.photos = response.data)
@@ -53,6 +56,4 @@ export default {
 }
 </script>
 
-<style>
-
-</style>
+<style></style>

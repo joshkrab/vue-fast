@@ -128,3 +128,16 @@ https://www.youtube.com/watch?v=eEF6Szpda9g&t=317s
 	- in PhotosPage component add dispatch in mounted()
 	- set getter in v-for
 
+	- Also set in mutations methods showDialog/hideDialog
+
+14 Vuex mapGetters, mapActions - 41:27 -----------------------------------------------------------------
+
+	- In PhotoPage.vue: import { mapActions } from 'vuex';
+	- In methods: ...mapActions(['fetchPhotos']),
+	- In mounted: this.fetchPhotos()
+
+	- In Photo.vue: import { mapMutations } from 'vuex';
+	- In methods: ...mapMutations(['setCurrentPhoto', 'showDialog', 'hideDialog']),
+	- Inside methods: this.setCurrentPhoto(this.photo);
+
+
