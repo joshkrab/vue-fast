@@ -31,6 +31,7 @@ export default {
 			// this.$store.commit('setCurrentPhoto', this.photo);
 			// this.$store.commit('showDialog');
 
+			// Run mutation:
 			this.setCurrentPhoto(this.photo);
 			this.showDialog();
 		}
